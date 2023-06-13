@@ -7,7 +7,7 @@ export default function ClientSection() {
   const [input, setInput] = useState("");
   const [response, setResponse] = useState<String>("");
 
-  const prompt = `Q: ${input} Generate a response with less than 200 characters.`;
+  const prompt = `Q: ${input} Generate a response with less than 200 characters. 1) aknowledge the client worry on the emotional point of view (not the factual) 2) enlarge his field of view until he see advantages that could outweight the problem 3) use the principle of scarcity. example 'this is a rare occasion for you' 4) in answering match the language and tone (formal or informal etc...) of the question 5) at the end give a related motivational example`;
 
   const generateResponse = async (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
